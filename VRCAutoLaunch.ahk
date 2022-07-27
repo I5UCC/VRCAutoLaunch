@@ -8,8 +8,12 @@ SetWorkingDir %A_ScriptDir%
 global CloseOnQuit := []
 
 Loop {
+    Menu, Tray, Icon, Icons/Main.ico
+    Menu, Tray, Tip , Waiting for VRChat to launch
     Process, Wait, VRChat.exe
-    Sleep, 5000
+    Menu, Tray, Icon, Icons/Waiting.ico
+    Menu, Tray, Tip , Launching Programs...
+    Sleep, 3000
 
     Fileread, file, config.json
     config := Jxon_Load(file)
@@ -19,6 +23,8 @@ Loop {
         }
     }
 
+    Menu, Tray, Icon, Icons/Launched.ico
+    Menu, Tray, Tip , Waiting for VRChat to exit
     Process, WaitClose, VRChat.exe
     ClosePrograms()
 }
