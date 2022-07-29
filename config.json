@@ -1,28 +1,12 @@
 {
   "ProgramList": [
     {
-      "FileName": "ThumbParamsOSC.exe",
-      "WorkingDir": "F:/Program Files/ThumbParamsOSC/",
+      "FileName": "",
+      "WorkingDir": "",
       "Arguments": "",
       "StartMinimized": 1,
       "CloseOnQuit": 1,
       "VROnly": 1
-    },
-    {
-      "FileName": "KatOscApp.exe",
-      "WorkingDir": "F:/Program Files/",
-      "Arguments": "",
-      "StartMinimized": 0,
-      "CloseOnQuit": 1,
-      "VROnly": 0
-    },
-    {
-      "FileName": "HRtoVRChat_OSC.exe",
-      "WorkingDir": "F:/Program Files/HRtoVRChat/HRtoVRChat_OSC/",
-      "Arguments": "",
-      "StartMinimized": 1,
-      "CloseOnQuit": 1,
-      "VROnly": 0
     }
   ]
 }

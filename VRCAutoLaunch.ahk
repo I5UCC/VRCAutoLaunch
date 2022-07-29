@@ -52,4 +52,5 @@ ClosePrograms() {
     {
         Process, Close, %element%
     }
+    CloseOnQuit := []
 }
