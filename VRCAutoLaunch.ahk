@@ -1,7 +1,22 @@
-﻿#NoEnv
+﻿;@Ahk2Exe-Let Version = 1.4
+;@Ahk2Exe-IgnoreBegin
+;@Ahk2Exe-IgnoreEnd
+;@Ahk2Exe-SetMainIcon icon.ico
+;@Ahk2Exe-SetVersion %U_Version%
+;@Ahk2Exe-SetName VRCAutolaunch
+;@Ahk2Exe-SetDescription VRCAutolaunch
+;@Ahk2Exe-Bin Unicode 64*
+;@Ahk2Exe-Obey U_au, = "%A_IsUnicode%" ? 2 : 1 ; .Bin file ANSI or Unicode?
+;@Ahk2Exe-PostExec "BinMod.exe" "%A_WorkFileName%"
+;@Ahk2Exe-Cont  "%U_au%2.>AUTOHOTKEY SCRIPT<. DATA              "
+
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 #Persistent
+#SingleInstance Force
+#Persistent
+#NoEnv
+SetBatchLines -1
 
 #Include AutoHotkey-JSON/Jxon.ahk
 
