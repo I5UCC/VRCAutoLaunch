@@ -25,8 +25,8 @@ It looks as follows:
 ***"WorkingDir":*** is the directory of your executable. <br>
 ***"Arguments":*** if you need any, can leave empty. <br>
 ***"StartMinimized":*** determines if the program should be started minimized or normally. <br>
-***"CloseOnQuit":*** determines if the program should close whenever the game is closed. Values are either false or true.  <br>
-***"VROnly":*** determines if the program should be autostarted only in VR or always. Values are either false or true.
+***"CloseOnQuit":*** determines if the program should close whenever the game is closed. Values are either 0 (false) or 1 (true).  <br>
+***"VROnly":*** determines if the program should be autostarted only in VR or always. Values are either 0 (false) or 1 (true).
 
 ### Example:
 
