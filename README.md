@@ -37,25 +37,25 @@ It looks as follows:
       "FileName": "ThumbParamsOSC.exe",
       "WorkingDir": "F:/Program Files/ThumbParamsOSC/",
       "Arguments": "",
-      "StartMinimized": 0,
+      "StartMinimized": 1,
       "CloseOnQuit": 1,
       "VROnly": 1
     },
     {
-      "FileName": "ThumbParamsOSC.exe",
-      "WorkingDir": "F:/Program Files/ThumbParamsOSC/",
-      "Arguments": "",
+      "FileName": "filename.exe",
+      "WorkingDir": "C:/Path/to/Folder,
+      "Arguments": "--test --x 2",
       "StartMinimized": 0,
-      "CloseOnQuit": 1,
+      "CloseOnQuit": 0,
       "VROnly": 1
     },
     {
-      "FileName": "ThumbParamsOSC.exe",
-      "WorkingDir": "F:/Program Files/ThumbParamsOSC/",
+      "FileName": "filename2.exe",
+      "WorkingDir": "C:/Path/to/Folder2,
       "Arguments": "--debug",
       "StartMinimized": 0,
-      "CloseOnQuit": 1,
-      "VROnly": 1
+      "CloseOnQuit": 0,
+      "VROnly": 0
     }
   ]
 }
