@@ -93,6 +93,7 @@ RunProgram(d) {
     }
 
     If (d.CloseOnQuit) {
+        CloseOnQuit.Push(temp)
         CloseOnQuit.Push(d.FileName)
     }
 }
