@@ -25,7 +25,7 @@ global running := 0
 
 Loop {
     Menu, Tray, Icon, Icons/VRCAL_Main.ico
-    Menu, Tray, Tip , VRCAutoLaunch: Waiting for VRChat
+    Menu, Tray, Tip , VRCAutoLaunch`nWaiting for VRChat
 
     While (!running) {
         Process, Exist, VRChat.exe
@@ -36,7 +36,7 @@ Loop {
     }
 
     Menu, Tray, Icon, Icons/VRCAL_Waiting.ico
-    Menu, Tray, Tip , VRCAutoLaunch: Launching Programs...
+    Menu, Tray, Tip , VRCAutoLaunch`nLaunching Programs...
 
     Fileread, file, config.json
     config := Jxon_Load(file)
@@ -47,7 +47,7 @@ Loop {
     }
 
     Menu, Tray, Icon, Icons/VRCAL_Launched.ico
-    Menu, Tray, Tip , VRCAutoLaunch: Waiting for VRChat to exit
+    Menu, Tray, Tip , VRCAutoLaunch`nWaiting for VRChat to exit
 
     While (running) {
         Process, Exist, VRChat.exe
@@ -63,7 +63,7 @@ Loop {
 RunProgram(d) {
     If (d.WorkingDir == "" || d.FileName == "") {
         Menu, Tray, Icon, Icons/VRCAL_Error.ico
-        Menu, Tray, Tip , VRCAutoLaunch: ERROR
+        Menu, Tray, Tip , VRCAutoLaunch`nERROR
         MsgBox, Either WorkingDir or FileName not set`, check your configuration. Exiting program...
         ExitApp
     }
@@ -75,7 +75,7 @@ RunProgram(d) {
     
     If (FileExist(file) == "") {
         Menu, Tray, Icon, Icons/VRCAL_Error.ico
-        Menu, Tray, Tip , VRCAutoLaunch: ERROR
+        Menu, Tray, Tip , VRCAutoLaunch`nERROR
         MsgBox, File %file% does not exist`, check your configuration. Exiting program...
         ExitApp
     }
