@@ -3,6 +3,8 @@
 A lightweight program that Automatically launches external programs with VRChat, 
 needs to be run in the background at all times, shows status in the system tray. 
 
+# [Download here](https://github.com/I5UCC/VRCAutolaunch/releases/download/v1.0/VRCAutolaunch_v1.0.zip)
+
 # Usage
 To add a program to your Autolaunch, you need to edit the config.json file. <br>
 It looks as follows: 
