@@ -1,7 +1,7 @@
 # VRCAutolaunch
 
 A lightweight program that Automatically launches external programs with VRChat, 
-needs to be run in the background at all times, shows status in the system tray. 
+needs to be run in the background at all times, shows status in the system tray. Useful if you use a boatload of different OSC programs and dont want to start them manually every time you start VRChat.
 
 # [Download here](https://github.com/I5UCC/VRCAutolaunch/releases/download/v1.0/VRCAutolaunch_v1.0.zip)
 
