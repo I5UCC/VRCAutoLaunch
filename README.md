@@ -6,12 +6,12 @@ needs to be run in the background at all times, shows status in the system tray.
 Useful if you use a boatload of different OSC programs and dont want to start them manually every time you start VRChat.
 
 # Install
-1. Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)
-2. Unpack the zip somewhere it will stay in. e.g. C:/.
-3a. if you *DON'T* have Windows Home Edition, run install.bat with Admin Priviliges.
-3b. if you DO have Windows Home Edition, Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or create a Scheduled task that runs VRCAutoLaunch.exe on startup and launch the program manually.
-4. Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.
-5. Now all of your programs will run on VRChat startup!
+1 - Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
+2 - Unpack the zip somewhere it will stay in. e.g. C:/.<br>
+3a - if you *DON'T* have Windows Home Edition, run ***install.bat*** with **Admin Priviliges**.<br>
+3b - if you DO have Windows Home Edition, Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or ***create a Scheduled task*** that runs ***VRCAutoLaunch.exe*** on startup and launch the program manually.<br>
+4 -  Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.<br>
+5 -  Now all of your programs will run on VRChat startup!<br>
 
 # Usage
 To add a program to your Autolaunch, you need to edit the config.json file. <br>
