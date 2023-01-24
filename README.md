@@ -5,8 +5,6 @@ needs to be run in the background at all times, shows status in the system tray.
 
 Useful if you use a boatload of different OSC programs and dont want to start them manually every time you start VRChat.
 
-# [Download here](https://github.com/I5UCC/VRCAutolaunch/releases/latest)
-
 # Install
 1. Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)
 2. Unpack the zip somewhere it will stay in. e.g. C:/.
