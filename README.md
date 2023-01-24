@@ -55,7 +55,7 @@ It looks as follows:
       "FileName": "filename.exe",
       "WorkingDir": "C:/Path/to/Folder,
       "Arguments": "--test --x 2",
-      "StartMinimized": 0,
+      "StartMinimized": 2,
       "CloseOnQuit": 0,
       "VROnly": 1
     },
