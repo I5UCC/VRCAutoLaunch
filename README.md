@@ -6,11 +6,18 @@ Useful if you use a boatload of different OSC programs and dont want to start th
 
 # Install
 1 - Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
+
 2 - Unpack the zip somewhere it will stay in. e.g. C:/.<br>
-3a - if you *DON'T* have Windows Home Edition, run ***install.bat*** with **Admin Priviliges**.<br>
+
+3a - ***If you DON'T have Windows Home Edition***:<br>
+- Run ***install.bat*** with **Admin Priviliges**.<br>
 ***install.bat*** activates Audit process tracking and creates a Scheduled Task with a custom filter to automatically start with vrchat.<br>
-3b - if you DO have Windows Home Edition, Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or ***create a Scheduled task*** that runs ***VRCAutoLaunch.exe*** on startup and launch the program manually.<br>
+
+3b - ***If you DO have Windows Home Edition***:<br>
+- Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or ***create a Scheduled task*** that runs ***VRCAutoLaunch.exe*** on startup and launch the program manually.<br>
+
 4 -  Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.<br>
+
 5 -  Now all of your programs will run on VRChat startup!<br>
 
 # Usage
