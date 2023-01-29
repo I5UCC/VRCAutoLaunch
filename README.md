@@ -45,7 +45,9 @@ It looks as follows:
 ***"CloseOnQuit":*** determines if the program should close whenever the game is closed. Values are either 0 (false) or 1 (true) <br>
 ***"VROnly":*** determines if the program should be autostarted only in VR or always. Values are either 0 (false) or 1 (true).
 
-All the Entries in that list are seperated by a comma ',' and follow the syntax of json. Heres an example on how a configuration might look:
+All the Entries in that list are seperated by a comma ',' and follow the syntax of json. 
+
+### Heres an example on how a configuration might look:
 
 ```
 {
