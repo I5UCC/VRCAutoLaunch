@@ -58,7 +58,7 @@ namespace VRCAutoLaunchConfigurator
 
         public override string ToString()
         {
-            return Path.Combine(WorkingDir, FileName).Replace('\\', '/');
+            return Path.Combine(WorkingDir, FileName).Replace('\\', '/') + " " + Arguments;
         }
     }
 }
