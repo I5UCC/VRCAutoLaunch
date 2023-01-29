@@ -1,4 +1,4 @@
-# VRCAutolaunch
+# VRCAutolaunch [![Github All Releases](https://img.shields.io/github/downloads/i5ucc/VRCAutoLaunch/total.svg)](https://github.com/I5UCC/VRCAutoLaunch/releases/latest)
 
 A lightweight program that Automatically launches external programs with VRChat.
 
