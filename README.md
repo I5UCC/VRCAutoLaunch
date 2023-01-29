@@ -45,33 +45,59 @@ It looks as follows:
 ***"CloseOnQuit":*** determines if the program should close whenever the game is closed. Values are either 0 (false) or 1 (true) <br>
 ***"VROnly":*** determines if the program should be autostarted only in VR or always. Values are either 0 (false) or 1 (true).
 
-### Example:
+All the Entries in that list are seperated by a comma ',' and follow the syntax of json. Heres an example on how a configuration might look:
 
 ```
 {
   "ProgramList": [
     {
-      "FileName": "ThumbParamsOSC.exe",
-      "WorkingDir": "F:/Program Files/ThumbParamsOSC/",
+      
+      "FileName": "vor.exe",
+      "WorkingDir": "F:/Program Files/vor/bin/",
+      "Arguments": "--enable-on-start",
+      "StartMinimized": 2,
+      "CloseOnQuit": 1,
+      "VROnly": 0
+    },
+    {
+      
+      "FileName": "cmd.exe",
+      "WorkingDir": "C:/Windows/System32/",
+      "Arguments": "/c start steam://run/1009850/",
+      "StartMinimized": 1,
+      "CloseOnQuit": 0,
+      "VROnly": 1
+    },
+    {
+      "FileName": "HRtoVRChat_OSC.exe",
+      "WorkingDir": "F:/Program Files/HRtoVRChat/HRtoVRChat_OSC/",
       "Arguments": "",
       "StartMinimized": 1,
+      "CloseOnQuit": 1,
+      "VROnly": 0
+    },
+    {
+      "FileName": "ThumbParamsOSC_NoConsole.exe",
+      "WorkingDir": "F:/Program Files/ThumbParamsOSC/",
+      "Arguments": "",
+      "StartMinimized": 0,
       "CloseOnQuit": 1,
       "VROnly": 1
     },
     {
-      "FileName": "filename.exe",
-      "WorkingDir": "C:/Path/to/Folder,
-      "Arguments": "--test --x 2",
-      "StartMinimized": 2,
-      "CloseOnQuit": 0,
-      "VROnly": 1
+      "FileName": "TextboxSTT.exe",
+      "WorkingDir": "F:/Program Files/TextboxSTT",
+      "Arguments": "",
+      "StartMinimized": 1,
+      "CloseOnQuit": 1,
+      "VROnly": 0
     },
     {
-      "FileName": "filename2.exe",
-      "WorkingDir": "C:/Path/to/Folder2,
-      "Arguments": "--debug",
+      "FileName": "VRCDiscordMute_NoConsole.exe",
+      "WorkingDir": "F:/Program Files/VRCDiscordMute",
+      "Arguments": "",
       "StartMinimized": 0,
-      "CloseOnQuit": 0,
+      "CloseOnQuit": 1,
       "VROnly": 0
     }
   ]
