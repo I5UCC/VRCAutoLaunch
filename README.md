@@ -14,7 +14,7 @@ Useful if you use a boatload of different OSC programs and dont want to start th
 ***install.bat*** activates Audit process tracking and creates a Scheduled Task with a custom filter to automatically start with vrchat.<br>
 
 3b - ***If you DO have Windows Home Edition***:<br>
-- Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or ***create a Scheduled task*** that runs ***VRCAutoLaunch.exe*** on startup and launch the program manually.<br>
+- Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or ***create a Scheduled task*** that runs ***VRCAutoLaunch.exe*** on startup.<br>
 
 4 -  Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.<br>
 
@@ -22,7 +22,11 @@ Useful if you use a boatload of different OSC programs and dont want to start th
 
 # Usage
 To add a program to your Autolaunch, you need to edit the config.json file. <br>
-It looks as follows: 
+You can do that by either running the ***Configurator.exe***:
+![image](https://user-images.githubusercontent.com/43730681/215346515-f00f2edf-369c-4fb9-b90d-d98e0d12de59.png)<br>
+![image](https://user-images.githubusercontent.com/43730681/215346523-f2f574cc-ff7d-4d05-af51-85dcfd788174.png)<br>
+
+Or by editing the config.json manually. It looks as follows: 
 ```
 {
   "ProgramList": [
@@ -53,7 +57,6 @@ All the Entries in that list are seperated by a comma ',' and follow the syntax 
 {
   "ProgramList": [
     {
-      
       "FileName": "vor.exe",
       "WorkingDir": "F:/Program Files/vor/bin/",
       "Arguments": "--enable-on-start",
@@ -62,7 +65,6 @@ All the Entries in that list are seperated by a comma ',' and follow the syntax 
       "VROnly": 0
     },
     {
-      
       "FileName": "cmd.exe",
       "WorkingDir": "C:/Windows/System32/",
       "Arguments": "/c start steam://run/1009850/",
