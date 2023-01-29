@@ -55,6 +55,10 @@ Loop {
     }
 
     ClosePrograms()
+    
+    if (A_Args[1] = "--once") {
+        ExitApp
+    }
 }
 
 RunProgram(d) {
