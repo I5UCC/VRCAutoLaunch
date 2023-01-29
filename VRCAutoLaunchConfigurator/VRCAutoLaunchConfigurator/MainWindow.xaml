@@ -1,0 +1,15 @@
+﻿<Window x:Class="VRCAutoLaunchConfigurator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VRCAutoLaunchConfigurator"
+        mc:Ignorable="d"
+        Title="VRCAutoLaunch - Configurator" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Btn_Add" Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="105" Click="Btn_Add_Click" FontSize="16"/>
+        <Button x:Name="Btn_Edit" Content="Edit" IsEnabled="False" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="105" Click="Btn_Edit_Click" FontSize="16"/>
+        <Button x:Name="Btn_Delete" Content="Delete" IsEnabled="False" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Click="Btn_Delete_Click"/>
+        <ListBox x:Name="Listbox" MouseDoubleClick="Listbox_MouseDoubleClick" Margin="10,40,10,10" SelectionChanged="Listbox_SelectionChanged" FontSize="16"/>
+    </Grid>
+</Window>

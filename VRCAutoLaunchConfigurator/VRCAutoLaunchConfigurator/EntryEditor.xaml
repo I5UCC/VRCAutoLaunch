@@ -1,0 +1,27 @@
+﻿<Window x:Class="VRCAutoLaunchConfigurator.EntryEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VRCAutoLaunchConfigurator"
+        mc:Ignorable="d"
+        Title="VRCAutoLaunch - EntryEditor" Height="464" Width="420" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="FileName" HorizontalAlignment="Left" Margin="24,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-4.18" FontSize="16"/>
+        <Label Content="WorkingDir" HorizontalAlignment="Left" Margin="24,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-4.18" FontSize="16"/>
+        <Label Content="Arguments" HorizontalAlignment="Left" Margin="24,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-4.18" FontSize="16"/>
+        <Label Content="StartMinimized" HorizontalAlignment="Left" Margin="24,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-4.18" FontSize="16"/>
+        <Label Content="CloseOnQuit" HorizontalAlignment="Left" Margin="24,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-4.18" FontSize="16"/>
+        <Label Content="VROnly" HorizontalAlignment="Left" Margin="24,320,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-4.18" FontSize="16"/>
+        <TextBox x:Name="Tbx_Filename" HorizontalAlignment="Left" Margin="168,70,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="207" Height="24" TextChanged="Tbx_Filename_TextChanged"/>
+        <TextBox x:Name="Tbx_WorkingDir" HorizontalAlignment="Left" Margin="168,118,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="207" Height="24" TextChanged="Tbx_WorkingDir_TextChanged"/>
+        <TextBox x:Name="Tbx_Arguments" HorizontalAlignment="Left" Margin="168,167,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="207" Height="24"/>
+        <CheckBox x:Name="Cbx_StartMinimized" Content="Enable" HorizontalAlignment="Left" Margin="168,222,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Cbx_MinimizeLegacy" Content="Legacy" HorizontalAlignment="Left" Margin="243,222,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Cbx_CloseOnQuit" Content="Enable" HorizontalAlignment="Left" Margin="168,274,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Cbx_VROnly" Content="Enable" HorizontalAlignment="Left" Margin="168,330,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Btn_Save" IsEnabled="False" Content="Save" HorizontalAlignment="Left" Margin="24,383,0,0" VerticalAlignment="Top" Width="351" FontSize="16" Height="26" Click="Save_Click"/>
+        <Label Name="Lbl_Header" Content="ADD NEW ENTRY" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="150" FontSize="16" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
