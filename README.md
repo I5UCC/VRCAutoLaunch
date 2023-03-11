@@ -4,6 +4,8 @@ A lightweight program that Automatically launches external programs with VRChat.
 
 Useful if you use a boatload of different OSC programs and dont want to start them manually every time you start VRChat.
 
+### [Discord Support Server](https://discord.gg/rqcWHje3hn)
+
 # Install
 1 - Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
 
