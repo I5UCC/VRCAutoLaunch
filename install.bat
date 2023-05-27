@@ -29,6 +29,13 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------    
 
+for /f "tokens=4-5 delims=. " %%i in ('powershell -c wmic os get Caption') do set EDITION=%%i
+
+if "%EDITION%" EQU "Home" (
+	schtasks /create /tn "VRCAutoLaunch" /tr '%~dp0VRCAutoLaunch.exe' /sc onstart
+	exit
+)
+
 @FOR /f "tokens=2*" %%i in ('Reg Query "HKEY_CURRENT_USER\Software\VRChat" /ve 2^>Nul') do Set "ExePath=%%j"
 If defined ExePath (echo VRChat path: "%ExePath%" ) Else ( 
     echo VRChat path not found...
