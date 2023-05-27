@@ -4,23 +4,20 @@ A lightweight program that Automatically launches external programs with VRChat.
 
 Useful if you use a boatload of different OSC programs and dont want to start them manually every time you start VRChat.
 
-### [Discord Support Server](https://discord.gg/rqcWHje3hn)
+### [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord Support Server](https://discord.gg/rqcWHje3hn)
 
 # Install
-1 - Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
+1. Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
 
-2 - Unpack the zip somewhere it will stay in. e.g. C:/.<br>
+2. Unpack the zip somewhere it will stay in. e.g. C:/.<br>
 
-3a - ***If you DON'T have Windows Home Edition***:<br>
-- Run ***install.bat*** with **Admin Priviliges**.<br>
-***install.bat*** activates Audit process tracking and creates a Scheduled Task with a custom filter to automatically start with vrchat.<br>
+3. Run ***install.bat*** with **Admin Priviliges**.<br>
+- On ***non*** Windows Home Edition: ***install.bat*** activates Audit process tracking and creates a Scheduled Task with a custom filter to automatically start with vrchat.<br>
+- On Windows Home Edition: ***install.bat*** creates a Scheduled Task that launches on startup.
 
-3b - ***If you DO have Windows Home Edition***:<br>
-- Create a shortcut of the VRCAutoLaunch.exe and place it in ***shell:startup*** or ***create a Scheduled task*** that runs ***VRCAutoLaunch.exe*** on startup.<br>
+4. Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.<br>
 
-4 -  Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.<br>
-
-5 -  Now all of your programs will run on VRChat startup!<br>
+5. Now all of your programs will run on VRChat startup!<br>
 
 # Usage
 To add a program to your Autolaunch, you need to edit the config.json file. <br>
