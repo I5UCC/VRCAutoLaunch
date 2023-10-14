@@ -44,6 +44,7 @@ If defined ExePath (echo VRChat path: "%ExePath%" ) Else (
     )
 echo Current path: %~dp0
 
+del /q /f task.xml
 echo Creating task.xml ...
 powershell -Executionpolicy Bypass -NoProfile -Command "(gc VRCAutoLaunch.xml) -replace 'PATH1', '%ExePath%\VRChat.exe' -replace 'PATH2', '%~dp0VRCAutoLaunch.exe' | Out-File task.xml"
 echo Enabling Audit process Tracking ...
@@ -52,6 +53,5 @@ gpupdate /force
 echo Creating Task ...
 schtasks /delete /tn VRCAutoLaunch /f
 schtasks /create /xml task.xml /tn VRCAutoLaunch
-del /q /f task.xml
 echo Done!
 timeout /T 10
