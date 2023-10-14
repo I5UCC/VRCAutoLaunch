@@ -39,10 +39,15 @@ if "%EDITION%" EQU "Home" (
 @FOR /f "tokens=2*" %%i in ('Reg Query "HKEY_CURRENT_USER\Software\VRChat" /ve 2^>Nul') do Set "ExePath=%%j"
 If defined ExePath (echo VRChat path: "%ExePath%" ) Else ( 
     echo VRChat path not found...
-    set /p ExePath=Enter VRChat path:
+    set /p ExePath="Enter VRChat path (Folder):"
     echo VRChat path: "%ExePath%"
     )
 echo Current path: %~dp0
+SET /P correct=Is %ExePath% the correct path to VRChat? ([Y]/N)?
+
+IF /I "%correct%" EQU "N" (
+    set /p ExePath="Enter VRChat path (Folder):"
+)
 
 del /q /f task.xml
 echo Creating task.xml ...
