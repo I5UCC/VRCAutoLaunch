@@ -7,6 +7,7 @@ Useful if you use a boatload of different OSC programs and dont want to start th
 ### [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord Support Server](https://discord.gg/rqcWHje3hn)
 
 # Install
+## Automatic
 1. Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
 
 2. Unpack the zip somewhere it will stay in. e.g. C:/.<br>
@@ -18,6 +19,15 @@ Useful if you use a boatload of different OSC programs and dont want to start th
 4. Add all your programs to config.json. look under [#Usage](https://github.com/I5UCC/VRCAutoLaunch#usage) on how to do that.<br>
 
 5. Now all of your programs will run on VRChat startup!<br>
+
+## Manual
+1. Download the [newest release](https://github.com/I5UCC/VRCAutolaunch/releases/latest)<br>
+
+2. Unpack the zip somewhere it will stay in. e.g. C:/.<br>
+
+3. Add it to your systems autostart: <br>
+- Either place the VRCAutolaunch.exe in the `C:\Users\{UserName}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` (shell:startup) folder.
+- or create a Scheduled Task that launches VRCAutolaunch on startup.
 
 # Usage
 To add a program to your Autolaunch, you need to edit the config.json file. <br>
